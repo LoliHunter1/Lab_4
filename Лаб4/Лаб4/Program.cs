@@ -21,7 +21,7 @@ namespace Лаб4
                 Console.WriteLine();
             }
         }
-        static void PrintAnyArr(string b, Array a)
+        static void PrintAnyArr(string b, Array a)//чтобы не делать две функции для foreach и цикла for я реализовал оба этих метода в одной функции
         {
             Console.WriteLine("Массив {0} = ", b);
             if (a.Rank == 1)
@@ -149,7 +149,7 @@ namespace Лаб4
             arra.PrintArObj("B", B);*/
 
             /*Zad 6*/
-            Console.WriteLine("Введите длину размера");
+            Console.WriteLine("Введите длину размера");//Для умножения и деления матриц нужно сделать длину или ширину массива равной 4
             int b = int.Parse(Console.ReadLine());
             int c = int.Parse(Console.ReadLine());
             int[,] mas1 = new int[b, c];
